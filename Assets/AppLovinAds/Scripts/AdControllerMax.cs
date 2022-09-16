@@ -221,7 +221,6 @@ public class AdControllerMax : MonoBehaviour  //SingletonComponent<AdControllerM
         }
 
         return false;
-
     }
 
     public void ShowRewardedAd()
@@ -253,8 +252,15 @@ public class AdControllerMax : MonoBehaviour  //SingletonComponent<AdControllerM
             return false;
         }
 
-        this.e_OnRewardAdClosed = onClosedCallback;
-        this.e_onRewardGrantedCallback = onRewardGrantedCallback;
+        if (onClosedCallback != null)
+        {
+            this.e_OnRewardAdClosed = onClosedCallback;
+        }
+
+        if(onRewardGrantedCallback != null)
+        {
+            this.e_onRewardGrantedCallback = onRewardGrantedCallback;
+        }
 
         return false;
     }

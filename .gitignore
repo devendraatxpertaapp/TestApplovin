@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-9_5_0.dll
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-9_5_0.bundle
